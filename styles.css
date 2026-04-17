@@ -112,6 +112,7 @@ p {
     top: 0;
     left: 0;
     border: none;
+    object-fit: cover; /* Asegura que el video se ajuste al contenedor */
 }
 
 .footer-note {
@@ -205,6 +206,7 @@ strong {
     .video-container {
         border-radius: 12px;
         margin-top: 1rem;
+        padding-bottom: 56.25%; /* Relación de aspecto 16:9 para videos */
     }
 }
 
