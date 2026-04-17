@@ -92,11 +92,12 @@ p {
     padding: 2rem;
 }
 
+/* --- SECCIÓN CORREGIDA PARA EL VIDEO --- */
 .video-container {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%;
-    height: 0;
+    /* Mantiene la proporción 16:9 en cualquier pantalla */
+    aspect-ratio: 16 / 9; 
     overflow: hidden;
     border-radius: 18px;
     margin-top: 1.5rem;
@@ -199,6 +200,12 @@ strong {
         font-size: 0.85rem;
         padding: 0 0.5rem;
     }
+
+    /* Se eliminó el padding-bottom: 75% que causaba el recorte */
+    .video-container {
+        border-radius: 12px;
+        margin-top: 1rem;
+    }
 }
 
 /* Touch devices - botones más grandes */
@@ -209,14 +216,5 @@ strong {
 
     .button-link:active {
         transform: scale(0.97);
-    }
-}
-
-/* Video responsive específico para móvil */
-@media (max-width: 600px) {
-    .video-container {
-        padding-bottom: 75%;
-        border-radius: 12px;
-        margin-top: 1rem;
     }
 }
