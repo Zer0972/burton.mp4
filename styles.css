@@ -195,7 +195,7 @@ p {
     body.bg-jack {
         background-attachment: scroll; /* Mejor para el rendimiento del móvil */
     }
-}
+        background-color: rgba(9, 8, 13, 0.75);
 
 
 body.bg-jack {
@@ -210,7 +210,7 @@ body.bg-jack::before {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+            background-color: rgba(9, 8, 13, 0.82);
     /* Ruta de tu imagen */
     background-image: linear-gradient(rgba(9, 8, 13, 0.7), rgba(9, 8, 13, 0.8)), 
                       url('imagenes/jack1.jpeg');
